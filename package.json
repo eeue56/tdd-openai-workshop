@@ -1,0 +1,18 @@
+{
+  "name": "tdd-openai-workshop",
+  "version": "1.0.0",
+  "description": "A workshop for getting to know openai",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx @eeue56/bach"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@eeue56/bach": "^0.1.2",
+    "dotenv": "^16.0.3",
+    "openai": "^3.2.1",
+    "ts-node": "^10.9.1"
+  }
+}
