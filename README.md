@@ -61,7 +61,17 @@ Write a function that will return exactly the same string as the argument passed
 parrot("hello world") === "hello world";
 ```
 
-Write a test for this function.
+Write a test for this function. Add some edge cases. It should look something like:
+
+```typescript
+import * as assert from "assert";
+import { parrot } from ".";
+
+export async function testParrot() {
+  let prompt = "hello world";
+  assert.deepStrictEqual(await parrot(prompt), prompt);
+}
+```
 
 Now we would like to replicate this behaviour through OpenAI. When we provide input to GPT, the format is through several messages - either a "system" message, or a "user" message. The "system" prompt can be thought of as the instructions on how to intepret the user messages. In this case, we will tell GPT that it is a parrot and should repeat back given words to you. Getting the prompt right can take a lot of time and tweaking to get exaclty what you want.
 
