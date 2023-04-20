@@ -9,6 +9,8 @@ Run the test runner via `npm run test`
 
 The test runner looks in the `tsconfig.include` directories for any files ending with `_test.ts`. Inside each file found, any functions exported with a name beginning with `test` will be run. Be sure to set `tsconfig.include` to point to your source directory.
 
+Your files should go in src/
+
 ## Part 2 - Installing open-ai specific things
 
 To use OpenAI's API, we must install the package:
